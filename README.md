@@ -11,7 +11,7 @@ Demo: https://bubiche.pythonanywhere.com/
 - If you are deploying this application, remember to add your domain name to `ALLOWED_HOSTS` in `langfuck/settings/prod.py`
 
 - Run the following commands:
-```python
+```bash
 pip install -r requirements.txt
 python manage.py migrate
 python manage.py collectstatic
