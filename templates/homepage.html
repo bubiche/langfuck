@@ -3,6 +3,21 @@
 
 {% block additional_body %}
   <div>
-    Hello
+    <h1>LangFuck</h1>
+
+    <p>Simple Django Web Application to encode source codes with the least amount of characters as possible</p>
+
+    <form action="/encode/" method="post" enctype="multipart/form-data">
+      {% csrf_token %}
+      {{ form }}
+      <br /><br />
+      <input type="submit" value="Encode File">
+    </form>
+
+    <h3>Source:</h3>
+    <ul>
+      <li><a href="https://github.com/bubiche/langfuck">https://github.com/bubiche/langfuck</a></li>
+    </ul>
+
   </div>
 {% endblock %}
